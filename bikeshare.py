@@ -162,13 +162,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        raw_data=input('would you review first 5 rows of filtered data? (yes, no): ')
-        row_n=0
-        while raw_data=='yes':
-            print(df.iloc[row_n:(row_n+5)])
-            row_n+=5
-            raw_data=input('would you continue reviewing data, hit yes for the next 5 rows? ')
-            
+        
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
